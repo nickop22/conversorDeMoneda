@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moneda 2.1</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Conversor de Moneda</h1>
+    </header>
+    <main>
+        <section id="conversor">
+            <h3>Pesos CLP</h3>
+            <input type="number" id="cantidad" placeholder="Cantidad en CLP" min="0">
+            <h4>Seleccione valor a convertir</h4>
+            <select id="moneda-seleccionada">
+                <option value="dolar">Dólar</option>
+                <option value="euro">Euro</option>
+                <option value="uf">UF</option>
+            </select><hr>
+            <button id="boton-convertir">Convertir</button>
+            <div id="resultados">
+                <p>Resultado: <span id="resultado-convertido">0</span></p>
+            </div>
+        </section>
+        <section id="contenedor-grafico">
+            <canvas id="miGrafico"></canvas>
+        </section>
+    </main>
+    <footer>
+        <p>Nicolás Pacheco</p>
+    </footer>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
